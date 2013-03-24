@@ -1,0 +1,46 @@
+.left {
+    float: left;
+    width: 100%;
+}
+.tweet {
+    border-bottom: 1px solid;
+}
+.timeSlotHeader {
+    background-color: grey;
+    padding: 5px;
+}
+.resultType {
+    text-align: center;
+}
+.resultContainer {
+    width: 49%;
+}
+#results {
+    border-bottom: 1px solid;
+}
+#searchResults {
+    padding-right: 10px;
+}
+#searchGraph {
+    width: 50%;
+    border-left: 1px solid;
+}
+#showMore {
+    margin: 10px 0 10px;
+    text-align: center;
+}
+#queryBox {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+#overlay {
+    background: url("ajax_loader.gif") no-repeat center grey;
+    opacity: 0.5;
+    min-height: 100px;
+}
+.tip {
+    font-size: 10px;
+    float: right;
+    font-weight: normal;
+}

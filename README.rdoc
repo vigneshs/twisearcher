@@ -1,0 +1,17 @@
+== Welcome to Twisearcher
+
+A simple Rails application to search tweets over Twitter.
+
+== What does it do?
+
+Twisearcher will search Twitter for you query and organize it by time slots. It also displays a neat bar chart to help you determine the trend of the tweets over time (atmost over a week).
+
+== Limitations
+
+1. You cannot query results which are more than a week old (as enforced by Twitter)
+
+
+== Improvements needed
+
+1. Polishing the UI, which is at present, in its bare minimum form
+2. Get results relevant for users by location, language and timestamp (these are already supported by Twitter, only need to take user inputs)

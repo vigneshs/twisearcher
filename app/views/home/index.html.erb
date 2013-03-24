@@ -1,0 +1,33 @@
+<div id="queryBox" class="left">
+    <h1> Welcome to Twisearcher </h1>
+    <p>Enter your query below to search Twitter</p>
+    <form>
+        <input type=text id="query" name="query" placeholder="Enter your query"/>
+        <input type=submit id="searchButton" value="Search"/>
+    </form>
+</div>
+
+<div id="results" class="left">
+    <div id="searchResults" class="resultContainer left">
+        <span class="resultType left"><strong>Results</strong></span>
+        <div id="accordion" class="left">
+            <% @time_slots.each do |slot| %>
+                <h3 id="slot_<%= slot %>" class="timeSlotHeader left">
+                    <%= slot %><span class="tip">Click to collapse/expand</span>
+                </h3>
+
+                <div id="tweets_<%= slot %>" class="timeSlotContent left"></div>
+            <% end %>
+        </div>
+        <div id="showMore" class="left">
+            <input type=button id="showMoreButton" value="Show more"/>
+        </div>
+    </div>
+
+    <div id="searchGraph" class="resultContainer left">
+        <span class="resultType left"><strong>Graph</strong></span>
+        <div id="barGraph" class="left"></div>
+    </div>
+</div>
+
+<div id="overlay">&nbsp;</div>
