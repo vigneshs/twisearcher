@@ -126,7 +126,7 @@ function setupForEarlierResults(nextMaxId) {
 
 function generateSearchUrl(){
     var query = $("#query").val();
-    var url = "search.js?query=" + query;
+    var url = "search.js?query=" + escape(query);
     if(maxTweetId)
         url = url + "&max_id=" + maxTweetId;
     return url;
